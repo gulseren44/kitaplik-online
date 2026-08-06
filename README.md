@@ -22,4 +22,12 @@ Bu proje, modern yazılım mimarileri prensiplerine uygun olarak geliştirilmiş
 * **Grafana:** Tüm metrik, log ve izleme verilerinin tek bir ekranda görselleştirilmesi (Dashboard).
 * **Docker & Docker Compose:** Tüm altyapı servislerinin konteynerize edilmesi ve tek komutla ayağa kaldırılması.
 
+   ### **AYRAÇ**
   
+<img width="1872" height="971" alt="Ekran görüntüsü 2026-08-05 163136" src="https://github.com/user-attachments/assets/54560465-b7ab-459d-b6dc-b4497624666b" />
+ 
+<img width="1890" height="860" alt="Ekran görüntüsü 2026-08-05 145755" src="https://github.com/user-attachments/assets/8879b4b1-826c-4e6c-9005-051e98f09d7c" />
+
+<img width="1828" height="917" alt="Ekran görüntüsü 2026-08-05 162935" src="https://github.com/user-attachments/assets/b5232d62-593f-4c80-9a33-1b01e85d8640" />
+
+<img width="1842" height="962" alt="Ekran görüntüsü 2026-08-05 145909" src="https://github.com/user-attachments/assets/09dcaa20-6f5b-431b-bab2-2ee0b56b855d" />
