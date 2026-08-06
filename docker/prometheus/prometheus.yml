@@ -1,0 +1,25 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  # 1. Gateway
+  - job_name: 'gateway-service'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8888']
+        labels:
+          application: 'gateway-service'
+
+  # 2. Dinamik Portlu Servisler (Eureka Service Discovery)
+  - job_name: 'eureka-discovered-services'
+    metrics_path: '/actuator/prometheus'
+    eureka_sd_configs:
+      - server: 'http://host.docker.internal:8761/eureka'
+    relabel_configs:
+      - source_labels: [__meta_eureka_app_name]
+        action: keep
+        regex: (BOOK-SERVICE|LIBRARY-SERVICE)
+      # Eureka'daki BÜYÜK HARFLİ ismi KÜÇÜK HARFE çevirip 'application' etiketi yap
+      - source_labels: [__meta_eureka_app_name]
+        target_label: application
+        action: lowercase

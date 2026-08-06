@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@theme {
+  --color-libri-primary: #1A2B48;
+  --color-libri-secondary: #FDFBF7;
+  --color-libri-accent: #E8E2D2;
+  --color-libri-dark: #121B2B;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #F8F9FA;
+  font-family: var(--font-sans);
+  color: var(--color-libri-primary);
+}
+
+/* Tüm input alanlarına sabit, şık bir kenarlık ekler */
+input {
+  border: 2px solid #CBD5E1 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Tıklandığında / Odaklanıldığında (Focus) koyu laciverte döner */
+input:focus {
+  border-color: #1A2B48 !important;
+  outline: none;
+}
